@@ -1,0 +1,13 @@
+{
+    "id": "object-detection-validation",
+    "version": "0.1.0",
+    "meta": {
+        "label": "Object Detection Validation",
+        "description": "Manually validate objects detected",
+        "author": "William Hill - borrowed heavily from Dataiku (Joachim Zentici)",
+        "icon": "icon-picture",
+        "licenseInfo": "Apache Software License",
+        "url": "https://github.com/will-hill/will-hill-dss-plugin-obj-detect-validation",
+        "tags": ["AI","Deep Learning", "Images", "Object Detection"]
+    }
+}

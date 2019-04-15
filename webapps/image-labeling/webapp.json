@@ -1,0 +1,50 @@
+{
+    "meta": {
+        "label": "Detected Object Validation",
+        "description": "Manually validated detect objects in images from a folder for use in supervised learning",
+        "icon": "icon-picture"
+    },
+    "baseType": "STANDARD",
+    "hasBackend": "true",
+    "standardWebAppLibraries" : ["jquery", "dataiku", "bootstrap", "font_awesome"],
+
+    "params": [
+        {
+            "type": "FOLDER", 
+            "name": "objects",
+            "label": "Objects",
+            "description": "Folder containing the objects to validate",
+            "mandatory": true, 
+            "canSelectForeign": true
+        },
+        {
+            "type": "FOLDER",
+            "name": "frames",
+            "label": "Frames",
+            "description": "Folder containing the frames the objects are from",
+            "mandatory": true,
+            "canSelectForeign": true
+        },
+        {
+            "type": "DATASET", 
+            "name": "dataset", 
+            "label":"Labels", 
+            "description": "Dataset to save the labels into", 
+            "mandatory": true, 
+            "canSelectForeign": false,
+            "canCreateDataset": true
+        },
+        {
+            "name": "categories",
+            "type": "KEY_VALUE_LIST",
+            "label": "Categories",
+            "description": "Category name → optional description",
+            "mandatory": true
+        }
+    ],
+
+    "roles": [
+        {"type": "FOLDER", "targetParamsKey": "objects"},
+        {"type": "FOLDER", "targetParamsKey": "frames"}
+    ]
+}
