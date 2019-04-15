@@ -1,13 +1,13 @@
 {
-    "id": "object-detection-validation",
+    "id": "AI Validate Boost",
     "version": "0.1.0",
     "meta": {
-        "label": "Object Detection Validation",
-        "description": "Manually validate objects detected",
-        "author": "William Hill - borrowed heavily from Dataiku (Joachim Zentici)",
+        "label": "Object Detection Validation and Boosting",
+        "description": "Manually validate objects detected, retrain on object crops",
+        "author": "William Hill - forked from Dataiku plugin",
         "icon": "icon-picture",
         "licenseInfo": "Apache Software License",
-        "url": "https://github.com/will-hill/will-hill-dss-plugin-obj-detect-validation",
-        "tags": ["AI","Deep Learning", "Images", "Object Detection"]
+        "url": "https://github.com/will-hill/AI_Boost_Validate",
+        "tags": ["AI","Deep Learning", "Images", "Object Detection", "Computer Vision", "Artificial Intelligence"]
     }
 }
